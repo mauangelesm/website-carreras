@@ -30,8 +30,12 @@ A continuación, le ofrecemos una lista de las carreras mejor pagadas en Latam q
 
      <h2 class="text-center mt-2 mb-4">Carreras disponibles</h2>
     <div>
+        <!--{{jobs}}-->
+        {% for job in jobs %}
+         {% include 'jobitem.html'%}
+        {% endfor %}
       <div class="text-center">
-      <button type="button" class="btn btn-primary btn-lg">Contactanos</button>
+      <button type="button" class="btn btn-primary btn-lg mt-4">Contactanos</button>
       <p class="mt-4">
         Derechos reservados, 2023
       </p>
